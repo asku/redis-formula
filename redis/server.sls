@@ -89,6 +89,9 @@ redis-server:
 
 {% else %}
 
+redis_memory_config:
+  vm.overcommit_memory:
+    - value: 1
 
 redis_config:
   file:
